@@ -1,0 +1,11 @@
+{f(a,b)=a,f(b,a)=b} {f(f(a,b),f(b,a))=a};
+klase ekvivalencija {a, f(a,b), f(f(a,b),f(b,a))} , {b, f(b,a)}
+
+{y=f(x),x=g(y)} {x=g(f(x))};
+klase ekvivalencija {y, f(x) } , {x, g(y), g(f(x)) }
+
+{x=f(x)} {x=f(f(f(x)))};
+klase ekvivalencija {x ,f(x), f(f(x)), f(f(f(x))) }
+
+{y=f(x),x=f(y)} {y=f(f(x))};
+klase ekvivalencija {y, f(x)}, {x, f(y), f(f(x))}
